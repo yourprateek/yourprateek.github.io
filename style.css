@@ -42,3 +42,29 @@ button:active{
 h4{
     margin: 4px;
 }
+.navbar ul{
+    list-style-type: none;
+    background-color: rgb(20, 20, 20);
+    padding: 0px;
+    margin: 5px;
+
+    display: flex;
+    justify-content: space-around;
+
+    border: 3px solid rgb(20, 20, 20);
+    border-radius: 12px;
+}
+.navbar li{
+    flex: 1;
+    text-align: center;
+}
+.navbar a{
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+}
+.navbar a:hover{
+    background-color: rgb(50, 50, 50);
+    border-radius: 9px;
+}
