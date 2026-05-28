@@ -57,16 +57,19 @@ h2{
 .navbar li{
     flex: 1;
     text-align: center;
+    border: 3px solid rgb(20, 20, 20);
 }
 .navbar a{
     color: whitesmoke;
     text-decoration: none;
     padding: 15px;
     display: block;
+    transition: background-color 0.5s;
+    transition: border-radius 20ms;
 }
 .navbar a:hover{
-    background-color: rgb(50, 50, 50);
     border-radius: 9px;
+    background-color: rgb(50, 50, 50);
     cursor: pointer;
 }
 .contactdd{
@@ -76,6 +79,8 @@ h2{
     cursor: default;
     padding:  15px;
     margin: 0px;
+    transition: background-color 0.5s;
+    transition: border-radius 20ms;
 }
 .contactdd p:hover{
     background-color: rgb(50, 50, 50);
@@ -85,10 +90,12 @@ h2{
     background-color: rgb(20, 20, 20);
     border: 3px solid rgb(20, 20, 20);
     border-radius: 12px;
+
     position: absolute;
     right: 0px;
     visibility: hidden;
     z-index: 100;
+
     opacity: 0;
     transition: opacity 0.5s ease;
 }
