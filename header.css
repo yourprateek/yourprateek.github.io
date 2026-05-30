@@ -1,47 +1,5 @@
-@font-face {
-    font-family: Nunito;
-    src: url(./Nunito-VariableFont_wght.woff2);
-    font-weight: 400 900;
-}
-body{
-    color : whitesmoke;
-    background-color: rgb(41, 41, 41);
-    font-size: 1.2em;
-    font-family: Nunito, sans-serif;
-}
-#Header{
-    background-color: rgb(20, 20, 20);
-    border: 3px solid rgb(66, 66, 66);
-    border-radius: 7px;
-}
-button{
-    background-color: whitesmoke;
-    font-size: 1.05em;
-    border: 3px solid rgb(60, 60, 60);
-    border-radius: 7px;
-    margin: 5px;
-    padding: 4px;
-}
-button:hover{
-    font-size: 1.05em;
-    border: 3px solid grey;
-    border-radius: 7px;
-    color:grey;
-}
-button:active{
-    font-size: 1.05em;
-    border: 3px solid black;
-    border-radius: 7px;
-    color: white;
-    background-color: black;
-}
-#Footer{
-    border-top: 2px solid white;
-    background-color: rgb(66, 66, 66);
-}
-h2{
-    margin: 4px;
-}
+
+/* Navigation Bar */
 .navbar ul{
     list-style-type: none;
     background-color: rgb(20, 20, 20);
@@ -51,19 +9,20 @@ h2{
     display: flex;
     justify-content: space-around;
 
-    border: 3px solid rgb(20, 20, 20);
+    border: 2px solid rgb(20, 20, 20);
     border-radius: 12px;
 }
 .navbar li{
     flex: 1;
     text-align: center;
-    border: 3px solid rgb(20, 20, 20);
+    border: 2px solid rgb(20, 20, 20);
 }
 .navbar a{
     color: whitesmoke;
     text-decoration: none;
     padding: 15px;
     display: block;
+
     transition: background-color 0.5s;
     transition: border-radius 20ms;
 }
@@ -72,6 +31,8 @@ h2{
     background-color: rgb(50, 50, 50);
     cursor: pointer;
 }
+
+/* Dropdown of Contact */
 .contactdd{
     position: relative;
 }
@@ -79,6 +40,7 @@ h2{
     cursor: default;
     padding:  15px;
     margin: 0px;
+
     transition: background-color 0.5s;
     transition: border-radius 20ms;
 }
@@ -107,6 +69,7 @@ h2{
     cursor: pointer;
 }
 
+/* copy number (refer index.js)*/
 .status-msg {
   margin-left: 10px;
   color: #2e7d32;
