@@ -5,9 +5,13 @@
 }
 body{
     color : whitesmoke;
-    background-color: rgb(60,60,60);
+    background-image: linear-gradient(to bottom, rgb(10,10,10), rgb(60,60,60), rgb(10,10,10));
     font-size: 1.2em;
     font-family: Nunito, sans-serif;
+
+    min-height: 100vh;           
+    background-attachment: fixed; 
+    background-repeat: no-repeat;
 
     margin: 0;
 }
