@@ -3,13 +3,16 @@
     src: url(./Nunito-VariableFont_wght.woff2);
     font-weight: 400 900;
 }
+html{
+    overscroll-behavior: none;
+}
 body{
     color : whitesmoke;
     background-image: linear-gradient(to bottom, rgb(10,10,10), rgb(60,60,60), rgb(10,10,10));
     font-size: 1.2em;
     font-family: Nunito, sans-serif;
 
-    min-height: 100vh;           
+    min-height: 99vh;           
     background-attachment: fixed; 
     background-repeat: no-repeat;
 
