@@ -1,0 +1,14 @@
+.container{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 150px 2fr 1fr;
+    grid-template-rows: auto;
+
+    gap: 1em;
+}
+.container .section{
+    border: 2px dashed white;
+    border-radius: 10px;
+
+    text-align: center;
+}

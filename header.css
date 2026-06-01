@@ -43,8 +43,6 @@
     margin: 0px;
 
     border-radius: 12px;
-
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(30, 30, 30, 0.4) 50%);
 }
 .contactdd:hover{
     background-color: rgb(50, 50, 50);
