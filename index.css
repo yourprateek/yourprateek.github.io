@@ -1,33 +1,63 @@
-body{
-    display: flex;
-   flex-direction: column;
-}
 main{
-    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 3rem 3rem 2rem 3rem;
 }
-h2{
-    margin: 4px;
+/*Main Content*/
+.left{
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: start;
+
+    font-size: 2em;
 }
-pre{
-    text-shadow: 5px 5px 6px black;
-    text-align: center;
-    cursor: default;
+.left p{
+    font-size: 0.5em;
+}
+/* Social Media */
+.left #Socials ul{
+    display: flex;
+
+    padding: 1em 0em 1em 0em;
+
+    list-style: none;
+    gap: 1em;
+}
+.left #Socials a{
+    text-decoration: none;
+    color: rgb(119, 4, 119);
+    filter: drop-shadow(0px 0px 10px white); 
+}
+.left #Socials a:hover{
+    filter: brightness(2%);
 }
 
-#intro-container{
-    margin-left: 20vb;
-    max-width: 80%;
+/* Image */
+.right{
+    position: relative;
+}
+.right img{
+    padding: 1em;
+    height: 30rem; width: auto;
 
-    text-align: center;
-    font-size: 1.1em;
-    text-shadow: 2px 2px 3px black;
+    border: 2px solid rgb(145, 15, 173) ;
+    border-radius: 50%;
 }
-#intro{
-    margin: 3px;
-    padding-bottom: 10px;
-}
-h3{
-    margin: 0;
-    text-align: center;
-    text-shadow: 3px 3px 4px black;
+/* gradient */
+.right .gradient{
+    padding: 0;
+    height: 30rem; width: 19em;
+    border-radius: 50%;
+
+    position: absolute;
+    top: 0; left: 0;
+
+    background-color: rgb(141, 13, 173);
+    filter: blur(30px);
+    box-shadow: 0 0 20px rgb(135, 10, 173);
+    
+    z-index: -1;
 }
