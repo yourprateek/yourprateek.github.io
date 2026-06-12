@@ -18,7 +18,7 @@ h2{
     border: 3px solid rgb(20,20,20);
     box-shadow: 0px 0px;
 }
-.minproj a .content{
+.minproj .content{
     background-color: rgb(20,20,20);
     height: 200px; width: 200px;
     color: whitesmoke;
@@ -33,13 +33,18 @@ h2{
     border: 3px solid rgb(20,20,20);
     border-radius: 8px;
     box-shadow: 2px 2px 1px whitesmoke;
+
+    background-size: cover;
+    background-position: center;
 }
-.minproj a .content:hover{
+.minproj .content:hover{
     filter: brightness(1.5);
 }
 #Counter{
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(30, 30, 30, 0.4) 50%) ,
-    url(./Images/Counter.png);
-    background-size: cover;
-    background-position: center;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(30, 30, 30, 0.1) 80%) ,
+    url(./Images/Counter.png); 
+}
+#Yamuna{
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(30, 30, 30, 0.1) 80%) ,
+    url(./Images/Lab.jpg);
 }
