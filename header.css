@@ -33,8 +33,10 @@ nav ul{
     display: flex;
     gap: 1rem;
 }
-nav ul li a{
+nav a{
     text-decoration: none;
+}
+nav ul li a{
     text-transform: uppercase;
     color: white;
 }

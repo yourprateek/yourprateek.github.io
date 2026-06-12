@@ -39,7 +39,7 @@ h2{
 }
 #Counter{
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(30, 30, 30, 0.4) 50%) ,
-    url(./Projects/Images/Counter.png);
+    url(./Images/Counter.png);
     background-size: cover;
     background-position: center;
 }
