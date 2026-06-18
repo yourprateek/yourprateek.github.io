@@ -1,3 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: HarryP;
+    src: url(./HarryP-Font.ttf);
+}
+@font-face{
+    font-family: Water;
+    src: url(./SuperWater.ttf);
+}
 body{
     height: 100vh; width: 100vw;
     background-image: radial-gradient(circle, rgba(0, 191, 255), rgb(0, 42, 255) 75%, darkblue);
@@ -35,7 +48,7 @@ body{
 }
 #bubble4{
     height: 300px; width: 300px;
-    top: -5vh; right: 25vw;
+    top: -5vh; right: 22vw;
 }
 
 .container{
@@ -51,12 +64,67 @@ body{
     backdrop-filter: blur(2px) brightness(1.1);
     
     border: 2px solid rgb(131, 177, 246);
-    border-radius: 10%;
+    border-radius: 40px;
+
+    text-shadow: 2px 2px 3px white;
+    color: rgb(4, 4, 170);
+    
+    padding: 4px;
 }
-.start{
-    position: absolute;
+
+h1, h2, h3, h4{  
+    font-size: 3rem;
+    margin: 4px;
 }
-.quiz{
-    position: absolute;
+p{
+    font-size: 110%;
+    margin: 4px;
+}
+
+/* Start Screen */
+.Start{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+.Start h1{
+    font-family: Water;
+    filter: opacity(0.9);
+    
+}
+#start-btn{
+    
+    font-size: 1.5rem;
+    margin: 1em;
+    padding: 0.5em;
+
+    border: 3px solid rgb(4, 4, 170);
+    border-radius: 10px;
+    
+    background-color: rgba(4, 4, 200, 0.1);
+    color: rgb(4, 4, 170) ;
+
+    scale: 1;
+    transition: background-color 10ms ease, scale 50ms ease;
+}
+#start-btn:hover{
+    scale: 1.05;
+    filter: brightness(1.3);
+}
+#start-btn:active{
+    scale: 1.02;
+    filter: brightness(0.5);
+    backdrop-filter: dropbrig;
+    background-color: rgba(4, 4, 200, 0.3);
+}
+
+/* Quiz Screen */
+.Quiz{
+    display: none;
+}
+
+/* Result Screen */
+.Result{
     display: none;
 }
