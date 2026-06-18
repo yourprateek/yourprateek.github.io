@@ -8,6 +8,7 @@
         Quiz
     </title>
 
+    <link rel="icon" href="./icons8-quiz-64.png">
     <link rel="stylesheet" href="./quiz.css">
 </head>
 
@@ -20,13 +21,13 @@
 
     <div class="container">
 
-        <div class="Start" id="start">
+        <div class="Screen active" id="start">
             <h1>Water Quiz</h1>
             <p>Test Your Knowledge of H<sub>2</sub>O!</p>
             <button id="start-btn">Start Quiz</button>
         </div>
 
-        <div class="Quiz" id="quiz">
+        <div class="Screen" id="quiz">
             <div id="quiz header">
                 
                 <h2 id="question"><!-- Question --></h2>
@@ -44,10 +45,10 @@
             </div>
         </div>
 
-        <div class="Result" id="result">
+        <div class="Screen" id="result">
             <h1> Quiz Result</h1>
             <div id="info">
-                <p> You Scored <span id="score">0</span> out of <span id="total-ques"></span> </p>
+                <p> You Scored <span id="score">0</span> out of <span id="total-ques">5</span> </p>
 
                 <h3 id="result-msg"> Nice! </h3>
             </div>

@@ -18,7 +18,6 @@ body{
 
     color: aliceblue;
     font-family: Arial, Helvetica, sans-serif;
-
 }
 
 .bubble{
@@ -65,6 +64,7 @@ body{
     
     border: 2px solid rgb(131, 177, 246);
     border-radius: 40px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.7);
 
     text-shadow: 2px 2px 3px white;
     color: rgb(4, 4, 170);
@@ -72,29 +72,13 @@ body{
     padding: 4px;
 }
 
-h1, h2, h3, h4{  
-    font-size: 3rem;
-    margin: 4px;
-}
-p{
+h1, h2, h3, h4, p{  
     font-size: 110%;
     margin: 4px;
 }
 
-/* Start Screen */
-.Start{
-    display: flex;
-    flex-direction: column;
-
-    align-items: center;
-}
-.Start h1{
-    font-family: Water;
-    filter: opacity(0.9);
-    
-}
-#start-btn{
-    
+/* Buttons */
+button{
     font-size: 1.5rem;
     margin: 1em;
     padding: 0.5em;
@@ -108,23 +92,44 @@ p{
     scale: 1;
     transition: background-color 10ms ease, scale 50ms ease;
 }
-#start-btn:hover{
+button:hover{
     scale: 1.05;
     filter: brightness(1.3);
 }
-#start-btn:active{
+button:active{
     scale: 1.02;
     filter: brightness(0.5);
     backdrop-filter: dropbrig;
     background-color: rgba(4, 4, 200, 0.3);
+} 
+
+.Screen{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    padding: 3rem;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.7);
+    background-color: rgba(127, 174, 255, 0.5);
+}
+
+.Screen.active{
+    display: flex;
+}
+
+/* Start Screen */
+#start h1{
+    font-family: Water;
+    filter: opacity(0.9);
+    font-size: 3rem;
 }
 
 /* Quiz Screen */
-.Quiz{
-    display: none;
-}
 
 /* Result Screen */
-.Result{
-    display: none;
+#result-msg{
+    scale: 0.7;
 }
