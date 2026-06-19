@@ -48,3 +48,7 @@ h2{
     background-image: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(30, 30, 30, 0.1) 80%) ,
     url(./Images/Lab.jpg);
 }
+#Quiz{
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(30, 30, 30, 0.1) 80%) ,
+    url(./Images/WaterQuiz.png);
+}
