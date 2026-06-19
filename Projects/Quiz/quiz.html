@@ -8,6 +8,8 @@
         Quiz
     </title>
 
+    <script src="https://kit.fontawesome.com/381071a656.js" crossorigin="anonymous"></script>
+
     <link rel="icon" href="./icons8-quiz-64.png">
     <link rel="stylesheet" href="./quiz.css">
 </head>
@@ -18,8 +20,6 @@
     <div class="bubble" id="bubble2"></div>
     <div class="bubble" id="bubble3"></div>
     <div class="bubble" id="bubble4"></div>
-
-    <div class="container">
 
         <div class="Screen active" id="start">
             <h1>Water Quiz</h1>
@@ -46,13 +46,12 @@
         <div class="Screen" id="result">
             <h1> Quiz Result</h1>
             <div id="info">
-                <p> You Scored <span id="score">0</span> out of <span id="max-score">5</span> </p>
+                <p> You Scored <span id="final-score">0</span> / <span id="max-score">5</span> </p>
 
                 <h2 id="result-msg"> Nice! </h2>
             </div>
-            <button id="restart">Restart Quiz</button>
+            <button id="restart"><i class="fa-solid fa-arrow-rotate-left"></i>Restart Quiz</button>
         </div>
-    </div>
 
     <script src="./quiz.js"></script>
 </body>

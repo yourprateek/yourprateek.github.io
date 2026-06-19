@@ -81,14 +81,12 @@ function startQuiz(){
 
     currentQuestionIndex = 0;
     scoreSpan.textContent = 0;
+    score = 0;
 
     startScreen.classList.remove("active");
     quizScreen.classList.add("active");
 
     showQuestion();
-}
-function restartQuiz(){
-    console.log("Quiz Restarted");
 }
 
 function showQuestion(){
@@ -97,7 +95,7 @@ function showQuestion(){
     const currentQuestion = quizQuestions[currentQuestionIndex];
     currentQuestionSpan.textContent = currentQuestionIndex +1;
 
-    const progressPercent= (currentQuestionIndex/quizQuestions.length) *100;
+    const progressPercent= ((currentQuestionIndex)/quizQuestions.length) *100;
     progressBar.style.width = progressPercent + "%";
 
     questionText.textContent = currentQuestion.question;
@@ -127,12 +125,14 @@ function selectAnswer(event){
         if (button.dataset.correct === "true") {
             button.classList.add("correct");
         }
-        else button.classList.add("incorrect");
+        else if(button === selectedButton){ 
+            button.classList.add("incorrect");
+        }
     })
 
     if (isCorrect) {
         score++;
-        scoreSpan.textContent = Sscore;
+        scoreSpan.textContent = score;
     }
 
     setTimeout(() => {
@@ -148,5 +148,27 @@ function selectAnswer(event){
 }
 
 function showResult(){
-    
+    quizScreen.classList.remove("active");
+    resultScreen.classList.add("active");
+
+    finalScoreSpan.textContent = score;
+
+    const percentage = (score/quizQuestions.length)*100;
+
+    if(percentage === 100) {
+        resultMessage.textContent = "A Perfect Score!? You are a Genius!   (Unless you cheated)";
+    }else if(percentage>= 60){
+        resultMessage.textContent = "Average! You can do better";
+    }else if(percentage>=30){
+        resultMessage.textContent = "Well..This is embarassing xD";
+    }else{
+        resultMessage.textContent = "Were you even trying?";
+    }
+}
+
+function restartQuiz(){
+    console.log("Quiz Restarted");
+    resultScreen.classList.remove("active");
+
+    startQuiz();
 }

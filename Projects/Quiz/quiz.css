@@ -16,18 +16,23 @@ body{
     background-image: radial-gradient(circle, rgba(0, 191, 255), rgb(0, 42, 255) 75%, darkblue);
     overflow: hidden;
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 2px 2px 3px white;
+
     color: aliceblue;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 h2 {
-    font-size: 1.6rem; 
-    margin: 0.5em;
+    font-size: 1.3rem; 
+    margin-bottom: 1em;
 }
 
 p {
     margin: 0.5em;
-    font-size: 1.3rem; 
+    font-size: 1rem; 
     line-height: 1.6; 
 }
 
@@ -61,25 +66,11 @@ p {
     top: -5vh; right: 22vw;
 }
 
-.container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    position: absolute;
-    height: 90vh; width: 50vw;
-    top: 5vh; left: 25vw;
-
-    text-shadow: 2px 2px 3px white;
-    color: rgb(4, 4, 170);
-    
-}
-
 /* Buttons */
 button{
     font-size: 1.5rem;
     
-    padding: 0.5em;
+    padding: 8px;
 
     border: 3px solid rgb(4, 4, 170);
     border-radius: 10px;
@@ -102,15 +93,17 @@ button:active{
 
 .Screen{
     padding: 3em;
-    width: 50vw;
+    min-width: 40vw;
+    max-width: 50vw;
 
     display: none;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
+    overflow: hidden;
     
     text-align: center;
+    color: rgb(4, 4, 170);
 
-    
     backdrop-filter: blur(2px) brightness(1.1);
     border: 2px solid rgb(131, 177, 246);
     border-radius: 40px;
@@ -124,6 +117,9 @@ button:active{
     flex-direction: row;
     justify-content: space-between;
     align-items: space-between;
+    gap: 2em;
+
+    text-wrap: nowrap;
 }
 
 h1{
@@ -138,6 +134,7 @@ h1{
 #info{
     background-color: rgba(255, 255, 255, 0.2);
     padding: 1em 3em 1em 3em;
+    margin-bottom: 10px ;
     border-radius: 10px;
 }
 
@@ -154,11 +151,14 @@ h1{
     color: rgb(4, 4, 170);
     border: 2px solid rgb(4, 4, 170);
     border-radius: 10px;
-    padding: 1rem;
+    padding: 0.5rem;
     cursor: pointer;
     text-align: left;
 
-    transition: background-color 100ms ease ;
+    text-wrap: nowrap;
+    font-size: 1.2em;
+
+    transition: background-color 500ms ease ;
 }
 .answer-btn:hover{
     background-color: rgba(255, 255, 255, 0.3);
@@ -173,16 +173,16 @@ h1{
     border-color: #ffbdbd;
     color: #dc3545;
 }
+.answer-btn.correct:active, .answer-btn.incorrect:active{
+    filter: brightness(1);
+    scale: 1.01;
+}
 .progress-bar{
     height: 10px;
     background-color: white;
 
     border-radius: 5px;
     overflow: hidden;
-    margin-top: 20px;
-
-    
-    margin-bottom: 20px;
 }
 .Progress{
     height: 100%;
@@ -190,4 +190,45 @@ h1{
     width: 0;
 
     transition: width 0.3s ease;
+}
+
+@media(max-width: 600px){
+    h2{
+        font-size: 1em;
+    }
+    .Screen{
+        padding: 1.5em;
+        margin: 2em;
+        min-width: 60vw;
+        max-width: 95vw;
+    }
+    #quiz-header{
+        gap: 1em;
+    }
+    .answer-btn{
+        font-size: 1em;
+        padding: 8px;
+    }
+    #bubble1{
+        top: 75vh; left: 2vw;
+    }
+    #bubble2{
+        display: none;
+    }
+    #bubble3{
+        top: 40vh;
+    }
+}
+@media(max-width: 320px){
+    #quiz-header{
+        gap: 0.2em;
+    }
+}
+@media(max-width: 300px){
+    #quiz-header{
+        flex-direction: column;
+    }
+    #quiz-header p{
+        margin: 2px;
+    }
 }
