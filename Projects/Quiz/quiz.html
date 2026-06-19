@@ -28,32 +28,32 @@
         </div>
 
         <div class="Screen" id="quiz">
-            <div id="quiz header">
-                
-                <h2 id="question"><!-- Question --></h2>
-                <h4> Question <span id="current-ques">0</span> of <span id="total-ques">5</span> </h4>
+            <div id="quiz-header">
+                <p> Question <span id="current-ques">0</span> of <span id="total-ques">5</span> </p>
                 <p>Score: <span id="score">0</span> </p>
-            
             </div>
+            <h2 id="question">Question</h2>
     
             <div class="Answers" id="answers">
                 <!-- Answers Options -->
             </div>
 
             <div class="progress-bar">
-                <div class="progress" id="progress"></div>
+                <div class="Progress" id="progress"></div>
             </div>
         </div>
 
         <div class="Screen" id="result">
             <h1> Quiz Result</h1>
             <div id="info">
-                <p> You Scored <span id="score">0</span> out of <span id="total-ques">5</span> </p>
+                <p> You Scored <span id="score">0</span> out of <span id="max-score">5</span> </p>
 
-                <h3 id="result-msg"> Nice! </h3>
+                <h2 id="result-msg"> Nice! </h2>
             </div>
             <button id="restart">Restart Quiz</button>
         </div>
     </div>
+
+    <script src="./quiz.js"></script>
 </body>
 </html>
