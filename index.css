@@ -64,7 +64,7 @@ main{
 
 @media(max-width: 760px){
     main{
-        align-items: left;
+        align-items: center;
         font-size: 75%;
     }
     .right img{
