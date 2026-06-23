@@ -149,6 +149,8 @@ nav ul a:hover::after{
 
         box-shadow: -4px 0 10px rgba(40, 40, 40,0.5);
         gap: 1em;
+
+        z-index: 10;
     }  
     nav a{
         font-size: 1em;
@@ -161,5 +163,12 @@ nav ul a:hover::after{
     }
     #sidebar-active:checked ~ #open-btn #angle{
         transform: rotate(180deg);
+    }
+    #sidebar-active:checked ~ #overlay{
+        background-color: red;
+        height: 100%; width: 100%;
+        position: fixed;
+        top: 0; left: 0;
+        z-index: 5;
     }
 }
