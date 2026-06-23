@@ -41,7 +41,7 @@ main{
 }
 .right img{
     padding: 1em;
-    height: 30rem; width: auto;
+    height: 30rem; width: 19em;
 
     border: 2px solid rgb(145, 15, 173) ;
     border-radius: 50%;
@@ -64,7 +64,19 @@ main{
 
 @media(max-width: 760px){
     main{
-        flex-direction: column-reverse;
-        align-items: center;
+        align-items: left;
+        font-size: 75%;
+    }
+    .right img{
+        height: 20em; width: auto;
+        padding: .75em;
+    }
+    .right .gradient{
+        height: 20em; width: 16em;
+    }
+}
+@media(max-width: 560px){
+    main{
+    flex-direction: column-reverse;
     }
 }
