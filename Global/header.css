@@ -165,7 +165,6 @@ nav ul a:hover::after{
         transform: rotate(180deg);
     }
     #sidebar-active:checked ~ #overlay{
-        background-color: red;
         height: 100%; width: 100%;
         position: fixed;
         top: 0; left: 0;

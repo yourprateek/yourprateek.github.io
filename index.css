@@ -80,3 +80,8 @@ main{
     flex-direction: column-reverse;
     }
 }
+@media(max-width: 460px){
+    h1{
+        font-size: 1em;
+    }
+}
