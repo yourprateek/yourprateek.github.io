@@ -112,9 +112,18 @@ nav ul a:hover::after{
         scale: 0;
     }
     nav #angle{
-        display: inline;
+        display: inline-block;
+        transition: transform 0.5s ease-out;
 
-        padding: 1em 0 1em 0;
+        vertical-align: bottom;
+        border-bottom-left-radius: 8px;
+        border-top-left-radius: 8px;
+
+        padding: 1em 0;
+    }
+    nav #open-btn{
+        height: fit-content;
+        margin-top: 1em;
         background-color: rgb(70,70,70);
 
         border: 2px solid rgb(55,55,55);
@@ -124,7 +133,7 @@ nav ul a:hover::after{
 
         z-index: 15;
     }
-    nav #angle:hover{
+    nav #open-btn:hover{
         backdrop-filter: blur(10px);
         -webkit-backdrop-filter: blur(10px);
         background-color: rgba(255, 255, 255, 0.2);
@@ -135,19 +144,22 @@ nav ul a:hover::after{
         padding-top: 1em;
         background-color: rgba(70,70,70,0.8);
         border-left: 2px solid rgb(55,55,55);
-        gap: 1em;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
 
-        box-shadow: -1px 0 20px rgba(41, 41, 41, 0.5);
+        box-shadow: -4px 0 10px rgba(40, 40, 40,0.5);
+        gap: 1em;
     }  
     nav a{
         font-size: 1em;
+        padding: 0.5em;
     } 
-    nav #open-btn{
-        padding-top: 1em;
-    }
 
     /* sidebar functionality */
     .sidebar:has(#sidebar-active:checked){
         right: 0;
+    }
+    #sidebar-active:checked ~ #open-btn #angle{
+        transform: rotate(180deg);
     }
 }
