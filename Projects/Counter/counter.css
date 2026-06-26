@@ -31,8 +31,9 @@ h4{
     font-size: 6em;
 }
 #btncontainer{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 1em;
 }
 #btncontainer button{
