@@ -68,7 +68,7 @@ body{
     z-index: -1;
 }
 
-@media(max-width: 760px){
+@media(max-width: 950px){
     main{
         align-items: center;
         font-size: 75%;
@@ -81,6 +81,10 @@ body{
 @media(max-width: 560px){
     main{
     flex-direction: column-reverse;
+    }
+    .left{
+        text-align: center;
+        align-items: center;
     }
 }
 @media(max-width: 460px){
