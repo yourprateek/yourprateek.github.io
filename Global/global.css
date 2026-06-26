@@ -15,7 +15,7 @@ body{
     font-size: 1.2em;
     font-family: Nunito, sans-serif;
 
-    background-image: radial-gradient(circle at top left, rgb(150,150,150) 0%, rgb(100,100,100)25%, rgb(60,60,60) 50%, rgb(10,10,10) 90%, rgb(0,0,0) 100%); 
+    background-image: url(./bg1.jpg); 
     min-height: 98vh;           
     background-attachment: fixed; 
     background-repeat: no-repeat;

@@ -4,6 +4,10 @@ main{
     gap: 2rem;
     padding: 3rem 3rem 2rem 3rem;
 }
+body{
+    user-select: none;
+    -webkit-user-select: none;
+}
 /*Main Content*/
 .left{
     display: flex;
@@ -28,7 +32,7 @@ main{
 }
 .left #Socials a{
     text-decoration: none;
-    color: rgb(119, 4, 119);
+    color: rgb(73, 3, 93);
     filter: drop-shadow(0px 0px 10px white); 
 }
 .left #Socials a:hover{
@@ -43,8 +47,10 @@ main{
     padding: 1em;
     height: 30rem; width: auto;
 
-    border: 2px solid rgb(145, 15, 173) ;
+    border: 2px solid rgb(96, 12, 115) ;
     border-radius: 50%;
+
+    backdrop-filter: blur(5px);
 }
 /* gradient */
 .right .gradient{
@@ -55,7 +61,7 @@ main{
     position: absolute;
     top: 0; left: 0;
 
-    background-color: rgb(141, 13, 173);
+    background-color: rgb(121, 11, 149);
     filter: blur(30px);
     box-shadow: 0 0 20px rgb(135, 10, 173);
     
