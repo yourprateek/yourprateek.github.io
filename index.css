@@ -49,8 +49,6 @@ body{
 
     border: 2px solid rgb(96, 12, 115) ;
     border-radius: 50%;
-
-    backdrop-filter: blur(5px);
 }
 /* gradient */
 .right .gradient{
