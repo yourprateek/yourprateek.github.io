@@ -11,6 +11,10 @@ html{
     overscroll-behavior: none;
 }
 body{
+    display: grid;
+    grid-template-rows: auto 1fr auto auto;
+    grid-template-columns: 100%;
+    
     color : rgb(255,255,255);
     font-size: 1.2em;
     font-family: Nunito, sans-serif;
@@ -21,6 +25,53 @@ body{
     background-repeat: no-repeat;
 
     text-shadow: 2px 2px 3px black;
+}
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    padding: 1rem;
+
+    background-color: black;
+    box-shadow: -2px 0 10px black;
+    height: 20vh;
+
+    img{
+        border-radius: 5px;
+        height: 3em;
+    }
+    hr{
+        height: 90%;
+    }
+    #quick-links{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        a{
+            
+            color: white;
+        }
+        
+    }
+}
+#copyright{
+    text-align: center;
+    backdrop-filter: blur(5px);
+}
+@media(max-width: 540px) {
+    footer{
+        flex-direction: column;
+        height: auto;
+        gap: 1em;
+    }
+}
+@media(max-width: 460px){
+    footer{
+        font-size: 75%;
+    }
 }
 
 /* web pages animation

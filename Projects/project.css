@@ -1,5 +1,6 @@
 h2{
     text-align: center;
+    padding: 1rem;
 }
 .minproj {
     display: grid;
@@ -7,6 +8,8 @@ h2{
     grid-auto-rows: 200px;
     grid-auto-flow: column;
     gap: 1em;
+
+    margin: 1rem 0;
 
     justify-content: center;
     align-items: center;

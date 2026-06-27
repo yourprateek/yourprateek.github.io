@@ -8,47 +8,8 @@ main{
     padding: 2.5rem;
 }
 body{
-    display: grid;
-    grid-template-rows: auto 1fr auto auto;
-    grid-template-columns: 100%;
-    
     user-select: none;
     -webkit-user-select: none;
-}
-footer{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-
-    padding: 1rem;
-
-    background-color: black;
-    box-shadow: -2px 0 10px black;
-    height: 20vh;
-
-    img{
-        border-radius: 5px;
-        height: 3em;
-    }
-    hr{
-        height: 90%;
-    }
-    #quick-links{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-        a{
-            
-            color: white;
-        }
-        
-    }
-}
-#copyright{
-    text-align: center;
-    backdrop-filter: blur(5px);
 }
 /*Main Content*/
 .left{
