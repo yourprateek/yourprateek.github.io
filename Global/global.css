@@ -22,3 +22,32 @@ body{
 
     text-shadow: 2px 2px 3px black;
 }
+
+/* web pages animation
+main{
+    view-transition-name: page-content;
+}
+@view-transition{
+    navigation: auto;
+}
+::view-transition-group(page-content){
+    animation-duration: 1s;
+    animation-timing-function: ease;
+}
+::view-transition-old(page-content){
+    animation-name: slide-out;
+}
+::view-transition-new(page-content){
+    animation-name: slide-in;
+}
+
+@keyframes slide-out{
+    to {
+        translate: -100%;
+    }
+}
+@keyframes slide-in{
+    from{
+        translate: 100%;
+    }
+} */

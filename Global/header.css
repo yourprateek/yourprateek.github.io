@@ -23,7 +23,7 @@ nav h1 img{
     filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.9));
 }
 nav h1{
-    background: linear-gradient(to right, rgb(0,0,0) 0%, rgb(66, 2, 91) 60%, rgb(141, 13, 173)80%, rgb(181, 33, 231)100%);
+    background: linear-gradient(to right, rgb(0,0,0) 0%, rgb(66, 2, 91) 60%, rgb(141, 13, 173)64%, rgb(181, 33, 231)85%, white 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
