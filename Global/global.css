@@ -66,6 +66,16 @@ footer{
         flex-direction: column;
         height: auto;
         gap: 1em;
+
+        hr{
+            width: 90%;
+            height: 0%;
+        }
+        #quick-links{
+            display: flex;
+            flex-direction: row;
+            gap: 1em;
+        }
     }
 }
 @media(max-width: 460px){
