@@ -84,6 +84,15 @@ body{
     gap: 1em;
     align-items: center;
 }
+#Socials li{
+    border: 2px solid transparent;
+    border-radius: 50%;
+
+    &:hover{
+        translate: 0 -2px;
+        transition: translate 0.3 ease;
+    }
+}
 
 /* Image */
 .right{

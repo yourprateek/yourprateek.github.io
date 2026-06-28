@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Temp Conversion Program</title>
+
+    <link rel="icon" type="image" href="">
+    <link rel="stylesheet" href="conv.css">
+    <script src="https://kit.fontawesome.com/381071a656.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="container">
+        <h1> Temperature Conversion</h1>
+        <form>
+            <div id="Input">
+                <label for="textbox" id="enter">Enter Temperature: </label>
+                <input type="number" id="textbox" value="0" oninput="convert()">
+                <div class="toggle-btn">
+                    <input type="checkbox" id="unit" class="radio-btn" onchange="unitchange()">
+                    <label for="unit" id="toggle">°C</label>
+                    <label aria-hidden="true" id="ghost-toggle"></label>
+                </div>
+            </div>
+        </form>
+        <p id="result">32.0°F</p>
+    </div>
+
+    <script src="conv.js"></script>
+</body>
+</html>
