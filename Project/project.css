@@ -23,7 +23,7 @@ h2{
 }
 .minproj .content{
     background-color: rgb(20,20,20);
-    height: 200px; width: 200px;
+     
     color: whitesmoke;
     text-align: center;
 
@@ -54,4 +54,8 @@ h2{
 #Quiz{
     background-image: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(30, 30, 30, 0.1) 80%) ,
     url(./Images/WaterQuiz.png);
+}
+#TempConv{
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.2) 100%) ,
+    url(./Images/TempConv.png);
 }
