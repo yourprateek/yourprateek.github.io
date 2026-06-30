@@ -129,7 +129,7 @@ body{
     align-items: center;
     gap: 1em;
 
-    img{
+    img, video{
         height: auto; width: 40vw;
         border-radius: 15px;
         box-shadow: 0 0 5px black;
