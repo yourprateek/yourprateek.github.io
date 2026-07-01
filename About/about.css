@@ -42,9 +42,9 @@
         content: "";
         width: 0; height: 2px;
         border-radius: 4px;
+
         bottom: 1px; right: -5%;
-        background-color: rgba(183, 152, 201, 0.797);
-        box-shadow: 0 0 4px white;
+        background: linear-gradient(270deg, #a855f7, transparent);
 
         transition: width 0.5s ease-in-out;
     }
@@ -80,6 +80,12 @@
             box-shadow: none;
         }
     }
+    h3,h2{
+        color: rgba(255, 255, 255, 0.941);
+    }
+    p{
+        color: #a0aec0;
+    }
 }
 
 /* Timeline */
@@ -89,22 +95,25 @@
 
     .dot{
         height: 1em; width: 1em;
-        background-color: rgb(255, 255, 255);
+        background-color: rgb(120, 1, 175);
+        border: 1px solid rgba(101, 2, 147, 0.498);
         border-radius: 50%;
         position: absolute;
         top: 50%;
         left: -0.5em;
+
+        z-index: 1
     }
     .line{
         height: calc(50% + 0.5em); width: 50%;
-        border-bottom: 2px solid rgba(255, 255, 255, 0.703);
+        border-bottom: 2px solid rgba(255, 255, 255, 0.639);
         border-bottom-right-radius: 10px;
     }
 }
 .main-timeline{
         position: absolute;
         width: 30px; height: calc(250% + 1.5rem * 2.5 - 1.9em / 4 - 1px + 1em * 3 - 10px);
-        border-right: 2px solid rgba(255, 255, 255, 0.71); border-bottom: 2px solid rgba(255, 255, 255, 0.701);
+        border-right: 2px solid rgba(255, 255, 255, 0.568); border-bottom: 2px solid rgba(255, 255, 255, 0.532);
         border-bottom-right-radius: 10px;
         right: 28px; bottom: calc(50% - 0.5em);
 }
