@@ -21,6 +21,10 @@ body{
 
     font-size: 2em;
 
+    h1{
+        font-family: sans-serif;
+    }
+
     #buttons{
         width: 100%;
         display: flex;
@@ -32,24 +36,22 @@ body{
         font-size: 0.6em;
         font-style: oblique;
         font-family: "Comic Sans MS";
-        color: rgb(71, 6, 90);
+        color: rgb(255, 255, 255);
         padding: 0.2em 0.5em;
-        background-color: rgba(129, 3, 129, 0.2);
-        backdrop-filter: blur(5px) brightness(1);
 
-        filter: drop-shadow(0px 0px 10px white);
-        border: 2px solid rgb(73, 2, 73);
+        background-color: transparent;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        border: none;
         border-radius: 7px;
+        backdrop-filter: blur(16px) brightness(1.5);
 
         text-wrap: nowrap;
         }
         button:hover{
-        filter: brightness(1);
-        background-color: rgba(156, 79, 194, 0.381);
+        backdrop-filter: brightness(2);
         cursor: pointer;
 
         translate: 0 -3px;
-
         transition: translate 0.3s ease;
         }
         button:active{
@@ -72,11 +74,11 @@ body{
 }
 .left #Socials a{
     text-decoration: none;
-    color: rgb(73, 3, 93);
-    filter: drop-shadow(0px 0px 5px white); 
+    color: #e0e0e0;
+    
 }
 .left #Socials a:hover{
-    filter: brightness(0);
+    filter: drop-shadow(0px 0px 5px white); 
 }
 #Socials{
     display: flex;
@@ -154,9 +156,11 @@ body{
         font-size: 3.5em;
         background-color: transparent;
         border: none;
-        color: rgb(56, 2, 71);
+        color: #e0e0e0;
 
-        filter: drop-shadow( 0 0 5px white);
+        &:hover{
+            filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.361)); 
+        }
     }
 }
 

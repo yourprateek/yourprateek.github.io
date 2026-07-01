@@ -19,7 +19,11 @@ body{
     font-size: 1.2em;
     font-family: Nunito, sans-serif;
 
-    background-image: url(./bg1.jpg); 
+    background-color: #121212;
+    background-image: 
+    radial-gradient(circle at 15% 50%, rgba(105, 30, 150, 0.3), transparent 40%),
+    radial-gradient(circle at 85% 10%, rgba(70, 20, 120, 0.4), transparent 40%);
+
     min-height: 98vh;           
     background-attachment: fixed; 
     background-repeat: no-repeat;

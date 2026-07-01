@@ -8,10 +8,15 @@ nav{
     align-items: center;
     text-wrap: nowrap;
 
-    backdrop-filter: blur(10px);
-    border-bottom: 1px solid rgb(106, 82, 129);
+    background: rgba(255, 255, 255, 0.03); 
+  
+    backdrop-filter: blur(16px); 
+    -webkit-backdrop-filter: blur(16px);
+  
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 10px;
-    box-shadow: 0 2px 5px rgb(48, 2, 71);
+  
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
 
     padding: 0.5rem;
 }
@@ -20,10 +25,10 @@ nav h1 img{
     width: 1em;
 
     border-radius: 2px;
-    filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.9));
+    filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.1));
 }
 nav h1{
-    background: linear-gradient(to right, rgb(0,0,0) 0%, rgb(66, 2, 91) 60%, rgb(141, 13, 173)64%, rgb(181, 33, 231)85%, white 100%);
+    background: linear-gradient(to right,white, rgb(152,30,190));
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
