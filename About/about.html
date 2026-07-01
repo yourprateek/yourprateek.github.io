@@ -46,7 +46,7 @@
         </header>
 
         <main>
-            <!--My Achievements, Academic Career, Hobbies, -->
+            <!--My Achievements, Hobbies, -->
 
             <!-- "About Me" Page: Layout & Draft
 Header: A clean, bold title like "Who is Prateek?"
@@ -57,8 +57,6 @@ Left Column: A secondary image (perhaps a more professional headshot, or another
 
 Right Column: The biographical text broken into short, readable paragraphs.
 
-Timeline/Grid Section below: A visual representation of your education (B.Tech at MAIT) and your current tech journey (focusing on C programming and Linux).
-
 Content Draft:
 Hi, I’m Prateek Gupta. I am a first-year B.Tech Computer Science Engineering student at the Maharaja Agrasen Institute of Technology (MAIT) based in Delhi.
 
@@ -68,10 +66,7 @@ My current technical playground involves writing and optimizing C code, and I ru
 
 When I'm Not Coding
 Screen time is great, but I believe in balancing it out. You can usually find me hitting the gym for some weight training, deep into a gaming session (patiently waiting for Hollow Knight: Silksong and playing Resident Evil), or catching up on anime like That Time I Got Reincarnated as a Slime, My Hero Academia, or Black Clover.
-
-Let's connect and build something awesome!
-
-Which of these sections would you like to focus on building out first—the dynamic elements for the home page, or the HTML/CSS structure for the footer? -->
+ -->
             
         <div class="container">
             <div class="section" id="Prof">
@@ -85,7 +80,58 @@ Which of these sections would you like to focus on building out first—the dyna
             </div>
         </div>
 
-        <div id="timeline"></div>
+        <div class="education">
+            <input type="checkbox" id="dd">
+
+            <div class="ed-sec" id="education-header" style="grid-area: box1">
+                <h1>Education</h1>
+                <label for="dd" id="dd-label"><i class="fa-solid fa-angle-down" id="dd-angle"></i></label>
+            </div>
+
+            <div class="ed-sec content-card" id="mait" style="grid-area: box2">
+                <img src="./MAIT_logo.jpg" alt="MAIT logo">
+                <div id="content">
+                    <h2><b>BTech</b> in CSE</h2>
+                    <h3>Maharaja Agrasen Institute of Technology, Delhi</h3>
+                    <p>Status: Currently Studying</p>
+                    <p>SGPA: 9.24 (1st Sem) ;</p>
+                    <p>CGPA: 9.24</p>
+                </div> 
+            </div>
+            <div class="time-line-angle" id="angle1" style="grid-area: box3">
+                <div class="dot"></div>
+                <div class="line"></div>
+            </div>
+
+            <div class="ed-sec content-card" id="XII" style="grid-area: box4">
+                <img src="./IPCS_logo.jpg" alt="IPCS logo">
+                <div id="content">
+                    <h2><b>Class XII</b></h2>
+                    <h3>Indraprastha Convent Senior Secondary School, Begumpur</h3>
+                    <p>Status: Completed (Passed)</p>
+                    <p>Percentage: 89.6%</p>
+                </div> 
+            </div>
+            <div class="time-line-angle" id="angle2" style="grid-area: box5">
+                <div class="dot"></div>
+                <div class="line"></div>
+            </div>
+
+            <div class="ed-sec content-card" id="X" style="grid-area: box6">
+                <img src="./IPCS_logo.jpg" alt="IPCS logo">
+                <div id="content">
+                    <h2><b>Class X</b></h2>
+                    <h3>Indraprastha Convent Senior Secondary School, Begumpur</h3>
+                    <p>Status: Completed (Passed with grace)</p>
+                    <p>Percentage: 93.0% (Best of 5)</p>
+                </div> 
+            </div>
+            <div class="time-line-angle" id="angle3" style="grid-area: box7">
+                <div class="dot"></div>
+                <div class="main-timeline"></div>
+            </div>
+            
+        </div>
         </main>
 
         <footer>
