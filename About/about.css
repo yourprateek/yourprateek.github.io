@@ -25,9 +25,7 @@
 .education{
     display: flex;
     flex-direction: column;
-
     padding: 2vw;
-    gap: 1em;
 
     h1{
         position: relative;
@@ -56,13 +54,38 @@
     "box6 box7";
 
     row-gap: 1em;
+    padding-top: 0;
     position: relative;
 
-    height: 0;
+    max-height: 0;
+    overflow: hidden;
 }
 #dd:checked ~ .hidden{
-    height: 100%;
+    max-height: 500vh;
+    padding-top: 1em;
+
+    .content-card{
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
+.content-card{
+    opacity: 0;
+    transform: translateX(-5em) translateZ(0);
+    transition: transform 0.6s ease, opacity 0.6s ease;  /* Cards Transition */
+    will-change: transform, opacity;
+}
+/* Transition Delays */
+#mait, #angle1 .dot, #angle1 .line{
+    transition-delay: 0.2s;
+}
+#XII, #angle2 .dot, #angle2 .line{
+    transition-delay: 0.4s;
+}
+#X, #angle3 .dot, #angle3 .line{
+    transition-delay: 0.6s;
+}
+/* Transition delay end*/
 .ed-sec{
     display: flex;
     gap: 1em;
@@ -73,7 +96,7 @@
     border: 1px solid rgba(255,255,255,0.4);
     border-radius: 10px;
     padding: 1vw;
-    backdrop-filter: blur(20px) brightness(1.5);
+    background-color: rgba(255, 255, 255, 0.05);
     box-shadow: 0 0 10px black;
 
     user-select: none;
@@ -103,7 +126,6 @@
 .time-line-angle{
     position: relative;
     height: 100%;
-    border: 2px solid red;
 
     .dot{
         height: 1em; width: 1em;
@@ -114,20 +136,43 @@
         top: 50%;
         left: -0.5em;
 
-        z-index: 1
+        z-index: 1;
+        opacity: 0;
+        translate: -5em 0;
+        transform: translateZ(0);
+        transition: opacity 0.5s ease, translate 0.5s ease;
+        will-change: opacity, transform;
     }
     .line{
         height: calc(50% + 0.5em); width: 50%;
         border-bottom: 2px solid rgba(255, 255, 255, 0.639);
         border-bottom-right-radius: 10px;
+
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform 0.5s ease;
     }
 }
+#dd:checked ~ .hidden .dot{
+    opacity: 1;
+    translate: 0 0;
+}
+#dd:checked ~ .hidden .line{
+    transform: scaleX(1);
+}
 .main-timeline{
-        position: absolute;
-        width: 30px; height: calc(250% + 1.5rem * 2.5 - 1.9em / 4 - 1px + 1em * 3 - 10px);
-        border-right: 2px solid rgba(255, 255, 255, 0.568); border-bottom: 2px solid rgba(255, 255, 255, 0.532);
-        border-bottom-right-radius: 10px;
-        right: 28px; bottom: calc(50% - 0.5em);
+    position: absolute;
+    width: 30px; height: calc(250% + 1.5rem * 2.5 - 1.9em / 4 - 1px + 1em * 3 - 10px);
+    border-right: 2px solid rgba(255, 255, 255, 0.568); border-bottom: 2px solid rgba(255, 255, 255, 0.532);
+    border-bottom-right-radius: 10px;
+    right: 28px; bottom: calc(50% - 0.5em);
+
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.5s ease;
+}
+#dd:checked ~ .hidden .main-timeline{
+    transform: scaleY(1);
 }
 /* education-header */
 #education-header{
@@ -158,6 +203,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-shrink: 0;
 
     border: 1px solid white;
     border-radius: 50%;
@@ -173,4 +219,19 @@
 }
 #dd:checked ~ #education-header #dd-label{
     transform: rotate(180deg);
+}
+@media(max-width: 675px){
+    .education{
+        margin-right: 1.5em;
+        padding: 1em;
+    }
+    .content-card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+
+        font-size: 75%;
+        padding: 1em;
+    }
 }
