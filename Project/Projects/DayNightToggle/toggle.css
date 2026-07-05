@@ -10,11 +10,11 @@ body{
 
     background-color: rgb(154, 203, 246);
 }
-.container{
+.toggle-container{
     display: flex;
     position: relative;
     
-    border-bottom: 2px solid white; border-right: 2px solid white;
+    border-bottom: 1px solid white; border-right: 1px solid white;
     border-radius: 11vw;
     background-color: rgb(1, 92, 172);
     box-shadow: inset 4px 4px 20px rgba(1, 37, 105, 0.8);
@@ -39,43 +39,48 @@ body{
 }
 .clouds{
     position: absolute;
-    width: 3vw; height: 3vw;
+    width: 20px; height: 20px;
     border-radius: 50px;
     background-color: white;
 
-    box-shadow: 0 0 0 1vw rgba(255, 255, 255, 0.4);
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.4);
 }
 #cloud5{
-    width: 8vw; height: 8vw;
-    bottom: 0; right: -4vw;
+    scale: 150%;
+    bottom: -5px; right: 0;
 }
 #cloud5::after, #cloud5::before{
     content: "";
     position: absolute;
-    width: 6vw; height: 6vw;
+    width: 10px; height: 10px;
     border-radius: 50%;
     background-color: white;
 }
 #cloud5::after{
-    top: -1vw; right: 1vw;
+    top: -2px; right: 0;
+    
 }
 #cloud5::before{
-    left: -4vw; bottom: 1vw;
+    left: -5px; bottom: 6px;
+    
 }
 #cloud4{
-    width: 9vw; height: 8vw;
-    bottom: -3vw; right: 3vw;
+    scale: 200%;
+    bottom: -16px; right: 25px;
+    
 }
 #cloud3{
-    width: 6vw; height: 6vw;
-    bottom: -3vw; right: 10vw;
+    scale: 70%;
+    bottom: -9px; right: 45px;
+    
 }
 #cloud2{
-    width: 4vw; height: 3vw;
-    bottom: -1.5vw; right: 15vw;
+    scale: 40%;
+    bottom: -10px; right: 53px;
+    border: 1px solid red;
 }
 #cloud1{
-    bottom: -2vw; right: 18vw;
+    bottom: -2px; right: 12px;
 }
 /* Clouds End */
 /* stars start */
@@ -85,7 +90,7 @@ body{
 }
 .stars{
     position: absolute;
-    width: 2px; height: 2px;
+    width: 0.5px; height: 0.5px;
     border-radius: 50%;
     background-color: white;
 
@@ -93,41 +98,42 @@ body{
 }
 #star1{
     scale: 125%;
-    top: 3vw; left: 3vw;
+    top: 26px; left: 26px;
 }
 #star2{
     scale: 200%;
-    top: 2.5vw; left: 9vw;
+    top: 13px; left: 39px;
 }
 #star3{
     scale: 250%;
-    top: 7vw; left: 12vw;
+    top: 19px; left: 9px;
 }
 #star4{
     scale: 200%;
-    top: 9vw; left: 4vw;
+    top: 35px; left: 50px;
 }
 #star5{
     scale: 100%;
-    top: 6vw; left: 6vw;
+    top: 38px; left: 12px;
 }
 #star6{
     scale: 100%;
-    top: 10vw; left: 10vw;
+    top: 42px; left: 35px;
 }
 /* stars end */
 #sun-moon-container{
     display: flex;
-    gap: 3vw;
+    align-items: center;
+    gap: 5px;
 }
 .celestial{
-    width: 10vw; height: 10vw;
+    width: 40px; height: 40px;
     border-radius: 50%;
-    margin: 1.5vw;
-    box-shadow: inset 0 -2px 20px rgba(0,0,0),
-                0 0 0 3vw rgba(255, 255, 255, 0.2), /* Inner ring */
-                0 0 0 7vw rgba(255, 255, 255, 0.15), /* Middle ring */
-                0 0 0 12vw rgba(255, 255, 255, 0.1); /* Outer ring */
+    margin: 6px;
+    box-shadow: inset 0 -2px 5px rgb(255, 172, 18),
+                0 0 0 6px rgba(255, 255, 255, 0.2), /* Inner ring */
+                0 0 0 20px rgba(255, 255, 255, 0.15), /* Middle ring */
+                0 0 0 34px rgba(255, 255, 255, 0.1); /* Outer ring */
 
     background-image: radial-gradient(circle, yellow 0%, rgb(255, 204, 0)90%, rgb(255, 123, 0)100%);
     
@@ -141,9 +147,13 @@ body{
 .celestial:has(#check:checked){
     position: relative;
     overflow: hidden;
-    background-image: radial-gradient(circle, rgb(176, 176, 176) 0%, rgb(129, 129, 129) 90%, rgb(61, 61, 61)100%);
+    box-shadow: inset 0 -2px 20px rgba(0,0,0),
+                0 0 0 6px rgba(255, 255, 255, 0.2), /* Inner ring */
+                0 0 0 20px rgba(255, 255, 255, 0.15), /* Middle ring */
+                0 0 0 34px rgba(255, 255, 255, 0.1); /* Outer ring */
+    background-image: radial-gradient(circle, rgb(176, 176, 176) 0%, rgb(129, 129, 129) 100%);
 
-    transform: translateX(16vw);
+    transform: translateX(57px);
     transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 
     .moon-circles{
@@ -159,15 +169,15 @@ body{
     width: 10%; height: 10%;
 }
 #circle1{
-    top: 2vw; left: 6vw;
+    top: 25px; left: 30px;
     scale: 170%;
 }
 #circle2{
-    top: 4.5vw; left: 3vw;
+    top: 20px; left: 10px;
     scale: 250%;
 }
 #circle3{
-    top: 8vw; left: 8vw;
+    top: 4px; left: 20px;
     scale: 400%;
 }
 /* moon circle end */
@@ -181,29 +191,18 @@ body{
     width: 100%; height: 100%;
     cursor: pointer;
 }
-.container:has(#check:checked){
-    background-color: black;
+.toggle-container:has(#check:checked){
+    background-color: rgb(0, 0, 0);
     box-shadow: inset 0 2px 20px black, inset 0 -2px 20px black;
     border-color: rgb(59, 59, 59);
 }
-.container:has(#check:checked) .clouds-stars{
-    bottom: -13vw;
+.toggle-container:has(#check:checked) .clouds-stars{
+    bottom: -52px;
 }
 
 #ghost{
     visibility: hidden;
-    width: 10vw; height: 10vw;
+    width: 40px; height: 40px;
     border-radius: 50%;
-    margin: 1.5vw;
-}
-@media(max-width: 400px){
-    .stars{
-        height: 1px; width: 1px;
-    }
-    .celestial{
-        box-shadow: inset 0 -2px 5px rgba(0,0,0),
-                0 0 0 3vw rgba(255, 255, 255, 0.2), /* Inner ring */
-                0 0 0 7vw rgba(255, 255, 255, 0.15), /* Middle ring */
-                0 0 0 12vw rgba(255, 255, 255, 0.1); /* Outer ring */
-    }
+    margin: 6px;
 }

@@ -44,10 +44,61 @@
                         <li><a href="mailto:ganugupta123456@gmail.com" target="_blank" title="Email Me"><i class="fa-solid fa-envelope"></i>  Email</a></li>
                     </ul>
                 </div>
+
+                <div class="toggle-container">
+            
+                        <div class="clouds-stars">
+                            <div class="clouds-group">
+                                <div class="clouds" id="cloud1"></div>
+                                <div class="clouds" id="cloud2"></div>
+                                <div class="clouds" id="cloud3"></div>
+                                <div class="clouds" id="cloud4"></div>
+                                <div class="clouds" id="cloud5"></div>
+                            </div>
+            
+                            <div class="stars-group">
+                                <div class="stars" id="star1"></div>
+                                <div class="stars" id="star2"></div>
+                                <div class="stars" id="star3"></div>
+                                <div class="stars" id="star4"></div>
+                                <div class="stars" id="star5"></div>
+                                <div class="stars" id="star6"></div>
+                            </div>
+                        </div>
+
+                        <div id="sun-moon-container">
+                            <div id="sun" class="celestial">
+                                <div class="moon-circles" id="circle1"></div>
+                                <div class="moon-circles" id="circle2"></div>
+                                <div class="moon-circles" id="circle3"></div>
+
+                                <input type="checkbox" id="check" checked>
+                                <label for="check" id="toggle"></label>
+                            </div>
+                            <div aria-hidden="true" id="ghost" ></div>
+                        </div>
+                    </div>
             </nav>
         </header>
         
         <main>
+            <div class="project-hero">
+                <h5>MY WORK</h5>
+                <h1>Projects</h1>
+                <p>Things that I have built while learning - from small experiments to full-page layouts.</p>
+            </div>
+
+            <h1 id="highlight-heading"> <i class="fa-regular fa-star" id="star"></i> Highlights</h1>
+
+            <div class="highlights">
+
+                <div id="coming-soon">
+                    <i class="fa-regular fa-star" id="star"></i>
+                    <h3>Coming Soon</h3>
+                    <p>Highlighted projects will appear here as work grows. Stay tuned.</p>
+                </div>
+            </div>
+
             <h2>Mini Projects</h2>
             <div class="minproj">
         
@@ -104,5 +155,7 @@
                 <a href="./project.html">Projects</a>
             </div>
         </footer>
+
+        <script src="../index.js"></script>
     </body>
 </html>

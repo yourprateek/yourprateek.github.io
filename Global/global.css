@@ -88,6 +88,24 @@ footer{
     }
 }
 
+/* header:has(#check:checked) ~ main{
+        
+    background-color: rgb(139, 72, 255);
+    background-image: 
+    radial-gradient(circle at 15% 50%, rgba(47, 13, 88, 0.7), transparent 40%),
+    radial-gradient(circle at 85% 10%, rgba(70, 20, 120, 0.8), transparent 40%);
+
+    color: black;
+    text-shadow: 1px 1px 3px rgb(239, 206, 255);
+
+    button{
+        color: black;
+    }
+    a{
+        color: black;
+    }
+} */
+
 /* web pages animation
 main{
     view-transition-name: page-content;
