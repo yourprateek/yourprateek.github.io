@@ -160,7 +160,7 @@ body{
         color: #e0e0e0;
 
         &:hover{
-            filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.361)); 
+            filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.2)); 
         }
     }
 }
