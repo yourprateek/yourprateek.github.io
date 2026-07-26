@@ -77,6 +77,15 @@ body{
     
     }
 }
+/* blink */
+#blink{
+    font-size: 0.7em;
+    animation: blink 1s ease-in-out infinite;
+}
+@keyframes blink{
+    0%, 100%{opacity: 1;}
+    50%{opacity: 0;}
+}
 .left p{
     font-size: 0.5em;
 }
