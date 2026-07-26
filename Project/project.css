@@ -14,11 +14,10 @@ main {
         svg path{
             fill: transparent;
             stroke: #00e5ff;
-            stroke-width: 10;
-            stroke-dasharray: 1870;
-            stroke-dashoffset: 1870;
+            stroke-dasharray: 940;
+            stroke-dashoffset: 940;
 
-            animation: textAnimation 3s ease-in-out infinite alternate;
+            animation: starAnimation 3s ease-in-out infinite alternate;
         }
     }
     #highlight-heading::after{
@@ -31,13 +30,12 @@ main {
         background-image: linear-gradient(to right, rgba(0, 229, 255, 0.7), rgba(0, 229, 255, 0));
     }
 }
-@keyframes textAnimation{
+@keyframes starAnimation{
         0%{
-            stroke-dashoffset: 1870;
+            stroke-dashoffset: 940;
         }
         100%{
             stroke-dashoffset: 0;
-            fill: rgb(145, 244, 255);
         }
     }
 
@@ -54,6 +52,7 @@ main {
     h1{
         font-size: 3.5em;
         padding: 5px 0;
+        color: rgba(255, 255, 255, 0.9);
     }
     p{
         color: grey;
@@ -80,11 +79,9 @@ main {
         max-width: 30vw;
     }
     #star{
-        font-size: 1.5em;
         padding: 0.4em;
         margin: 5px;
 
-        color: rgb(198, 228, 254);
         background-image: linear-gradient(135deg, rgba(57, 4, 127, 0.6), rgba(1, 29, 139, 0.6)) ;
         border: 1px solid #00e5ff65;
         border-radius: 10px;

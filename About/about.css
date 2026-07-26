@@ -229,10 +229,6 @@ main{
     font-size: 1.5em;
     border-radius: 50%;
     height: 1em; width: 1em;
-
-    &:hover{
-        background-color: rgba(255, 255, 255, 0.509);
-    }
 }
 #dd-label{
     height: 1.9em; width: 1.9em;
@@ -248,16 +244,17 @@ main{
     border-radius: 50%;
 
     transition: transform 0.3s ease;
+    transform: rotate(180deg);
 
     &:hover{
         cursor: pointer;
     }
     &:hover #dd-angle{
-        background-color: rgba(255, 255, 255, 0.281);
+        background-color: rgba(255, 255, 255, 0.2);
     }
 }
 #dd:checked ~ #education-header #dd-label{
-    transform: rotate(180deg);
+    transform: rotate(360deg);
 }
 
 /* display: Flex */
