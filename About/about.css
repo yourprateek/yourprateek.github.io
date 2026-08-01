@@ -113,19 +113,19 @@ main{
 }
 .content-card{
     opacity: 0;
-    transform: translateX(-5em) translateZ(0);
+    transform: translateX(-20em) translateZ(0);
     transition: transform 0.6s ease, opacity 0.6s ease;  /* Cards Transition */
     will-change: transform, opacity;
 }
 /* Transition Delays */
 #mait, #angle1 .dot, #angle1 .line{
-    transition-delay: 0.2s;
+    transition-delay: 0.1s;
 }
 #XII, #angle2 .dot, #angle2 .line{
-    transition-delay: 0.4s;
+    transition-delay: 0.15s;
 }
 #X, #angle3 .dot, #angle3 .line{
-    transition-delay: 0.6s;
+    transition-delay: 0.18s;
 }
 /* Transition delay end*/
 .ed-sec{
@@ -161,7 +161,7 @@ main{
     }
     h3,h2{
         color: #f8f9fa;
-        font-family: "Tahoma";
+        font-family: "Roboto";
     }
     p{
         color: #94a3b8;
@@ -237,6 +237,8 @@ main{
     font-size: 1.5em;
     border-radius: 50%;
     height: 1em; width: 1em;
+
+    transition: transform 0.3s ease;
 }
 #dd-label{
     height: 1.9em; width: 1.9em;
@@ -254,8 +256,6 @@ main{
     -0.5px 0.5px 2px black;
     border-radius: 50%;
 
-    transition: transform 0.3s ease;
-
     &:hover{
         cursor: pointer;
     }
@@ -263,12 +263,8 @@ main{
         background-color: rgba(255, 255, 255, 0.2);
     }
 }
-#dd:checked ~ #education-header #dd-label{
+#dd:checked ~ #education-header #dd-angle{
     transform: rotate(180deg);
-    box-shadow: 
-    0 0 12px rgba(0, 0, 0, 0.4),
-    inset 0.5px -0.5px 1px white,
-    0.5px -0.5px 2px black;
 }
 
 /* display: Flex */
@@ -301,7 +297,7 @@ main{
 
     padding: 10px;
 }
-@media(max-width: 675px){
+/* @media(max-width: 675px){
     .education{
         margin-right: 1.5em;
         padding: 1em;
@@ -315,4 +311,4 @@ main{
         font-size: 75%;
         padding: 1em;
     }
-}
+} */
