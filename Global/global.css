@@ -147,6 +147,13 @@ nav ul a:hover::after{
 
 /*----------------- HEADER End ------------------*/
 
+main{
+    a{
+        text-decoration: none;
+        color: white;
+    }
+}
+
 footer{
     display: flex;
     justify-content: space-evenly;
