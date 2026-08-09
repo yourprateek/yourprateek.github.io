@@ -2,13 +2,12 @@
     display: block;
     margin-inline: auto;
 
-    font-size: 1.2em;
-    font-style: oblique;
+    font-size: 1.4em;
     color: rgb(255, 255, 255);
     padding: 0.2em 0.5em;
     margin-top: 0.5em;
 
-    background-color: rgba(116, 54, 223, 0.2);
+    background-color: rgba(116, 54, 223, 0.4);
 
     box-shadow: 
     0 4px 10px rgba(0, 0, 0, 0.5),
@@ -17,13 +16,13 @@
 
         
     border: none;
-    border-radius: 7px;
+    border-radius: 16px;
     backdrop-filter: blur(16px);
 
     text-wrap: nowrap;
     
     &:hover{
-        background-color: rgba(116, 54, 223, 0.5);
+        background-color: rgba(116, 54, 223, 0.55);
         transform: translateY(-2px);
         box-shadow: 
         0 6px 14px rgba(0, 0, 0, 0.6),
