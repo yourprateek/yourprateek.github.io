@@ -36,6 +36,10 @@ body{
 
         button{
         
+            a{
+                display: block;
+                width: 100%;
+            }
         font-size: 0.8em;
         font-style: oblique;
         color: rgb(255, 255, 255);
